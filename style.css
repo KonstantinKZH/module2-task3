@@ -1,0 +1,1283 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Manrope', sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    /* overflow-x: hidden; */
+    letter-spacing: -0.03em;
+}
+
+/* Переменные */
+:root{
+    --black-121212: #121212;
+    --header-text: var(--black-121212);
+}
+
+/* Общий контейнер */
+.container{
+    margin: 0 auto;
+    width: 1150px;
+}
+
+/* К тегу <span> */
+.span-nav{
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Навигационная панель */
+.header{
+    margin-top: 32.82px;
+    margin-bottom: 70px;
+
+    min-width: 1150px;
+}
+
+.logo-link{
+    display: inline-block;
+}
+
+.logo{
+    display: block;
+    width: 126.89px;
+    height: 21.42px;
+}
+
+.ul-links{
+    display: inline-block;
+
+    margin-left: 554px;
+
+    height: 25px;
+
+    line-height: 25px;
+    vertical-align: top;
+}
+
+.ul-links__li{
+    display: inline-block;
+    margin-right: 58px;
+}
+
+.ul-links__li:nth-child(4){
+    margin-right: 0;
+}
+
+.ul-links__link{
+    position: relative;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black-121212);
+    transition: .3s linear;
+}
+
+/* Нижнее подчёркивание у ссылок навигационной панели */
+.ul-links__link:hover{
+    opacity: 0.5;
+}
+
+.ul-links__link::after{
+    content: "";
+    display: none;
+
+    width: 100%;
+    height: 2px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: var(--black-121212);
+    opacity: 0.5;
+
+    z-index: 1;
+}
+
+.ul-links__link:hover::after{
+    display: block;
+    opacity: 0.3;
+}
+
+
+/* MAIN */
+
+/* Basic information */
+.basic-information{
+    margin-bottom: 150px;
+}
+
+.header-main{
+    margin-bottom: 30px;
+
+    width: 100%;
+    
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+
+}
+
+.header-img-paragraph{
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    background-image: url('./resources/images/block2/image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-img{
+    display: block;
+    width: 1150px;
+    height: 500px;
+}
+
+.header-paragraph{
+    width: 430px;
+
+    position: absolute;
+    left: 40px;
+    top: 379px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+
+    color: #ffffff;
+}
+
+
+/* About Us */
+.about-us{
+    margin-bottom: 150px;
+}
+
+.about-us-header{
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.about-us-paragraph{
+    margin-bottom: 30px;
+
+    width: 1148px;
+
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 61px;
+
+    color: var(--black-121212);
+}
+
+.about-us-btn{
+    display: block;
+    
+    width: 255px;
+    height: 67px;
+
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 67px;
+
+    border: none;
+    border-radius: 5px;
+    
+    color: #ffffff;
+    background-color: #AD1818;
+
+    transition: .3s linear;
+}
+
+
+/* Projects */
+.projects{
+    margin-bottom: 150px;
+}
+
+.item{
+    margin-bottom: 90px;
+}
+
+.projects__header{
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    
+    color: var(--black-121212);
+}
+
+.item__img{
+    margin-bottom: 15px;
+}
+
+.item__header{
+    margin-bottom: 14px;
+
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+}
+
+.item__link{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration: none;
+
+    color: #AD1818;
+
+    transition: .3s linear;
+}
+
+.item__link:active{
+    font-size: 19px;
+}
+
+
+.projects__link-btn{
+    width: 100%;
+    height: 153px;
+
+    display: block;
+
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 153px;
+    text-decoration: none;
+    text-align: center;
+
+    border: 1px solid #AD1818;
+    border-radius: 6px;
+    color: #AD1818;
+    
+    transition: .3s linear;
+}
+
+.projects__link-btn:hover{
+    border: 1px solid #AD1818;
+
+    color: #ffffff;
+    background-color: #AD1818;
+}
+
+.projects__link-btn:active{
+    font-size: 29px;
+}
+
+
+
+/* Services */
+.services{
+    margin-bottom: 165px;
+    background-color: var(--black-121212);
+}
+
+.padding-top-bottom{
+    width: 100%;
+    padding: 150px 0;
+}
+
+.services__header{
+    padding-top: 150px;
+    margin-bottom: 34px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.box-wrapper{
+    margin-bottom: 106px;
+    width: 1150px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 85px;
+}
+
+.box-item{
+    width: calc(50% - 5px);
+    position: relative;
+}
+
+/* Задаём нижний отступ (от контейнера black-container) последнему блоку - services-block */
+.box-item:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+.box-item__img{
+    display: block;
+    /* width: 570px; */
+}
+
+.box-item__header{
+    margin-top: 13px;
+
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+
+    color: #ffffff;
+}
+
+.box-item__price{
+    padding: 5px 20px;
+
+    position: absolute;
+    left: 30px;
+    top: 32px;
+
+    background-color: #AD1818;
+    border-radius: 5px;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+
+    color: #ffffff;
+}
+
+.services__btn{
+    margin-bottom: 150px;
+    width: 100%;
+    height: 153px;
+    font-weight: 400;
+    font-size: 30px;
+
+    border-radius: 5px;
+    
+    color: #ffffff;
+    border: none;
+    background-color: #AD1818;
+    transition: .3s linear;
+}
+
+.services__header__btn:active{
+    transform: scale(0.975);
+}
+
+
+
+/* Reviews */
+
+.reviews{
+    margin-bottom: 157px;
+}
+
+.reviews__header{
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    color: #121212;
+}
+
+.row{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+}
+
+.col{
+    width: calc(50% - 106px);
+    overflow-x: visible;
+}
+
+.box{
+    /* width: 528px; */
+   
+}
+
+/* Модивикатор */
+.box_big{
+    width: calc(50% + 594px);
+}
+/* Модивикатор */
+
+.box__header{
+    margin-bottom: 30px;
+    width: calc(100% - 0px);
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+.box__content{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #121212;
+}
+
+
+/* Two room apartment project */
+.section-gallery{
+    margin-bottom: 150px;
+    width: 100%;
+    height: 717px;
+}
+
+.gallery{
+    position: relative;
+    width: 100%;
+}
+
+.gallery__container-position{
+    position: absolute;
+    top: 60px;
+    z-index: 100;
+}
+
+.gallery__slide-header{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.gallery__slides{
+    position: relative;
+    width: 100%;
+}
+
+.gallery__slide{
+    position: absolute;
+    width: 100%;
+    /* min-width: 960px; */
+    /* max-width: 1148px; */
+    height: 717px;
+    opacity: 0;
+}
+
+.gallery__slide-img1{
+    position: absolute;
+    background-image: url('./resources/images/gallery/gallery-img1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.gallery__slide-img2{
+    position: absolute;
+    background-image: url('./resources/images/gallery/gallery-img2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.gallery__slide-img3{
+    position: absolute;
+    background-image: url('./resources/images/gallery/gallery-img3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.gallery__slide-img4{
+    position: absolute;
+    background-image: url('./resources/images/gallery/gallery-img4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.gallery__slide_active{
+    opacity: 1;
+}
+
+.gallery__container-wrapper{
+    position: absolute;
+    top: 575px;
+}
+
+.gallery__content{
+    width: 443px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    color: #ffffff;
+}
+
+.gallery__container-controls{
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    width: 100%;
+    position: absolute;
+    top: 515px;
+}
+
+.gallery__control-prev{
+    transition: all .5s ease;
+}
+
+.gallery__control-prev:hover{
+    opacity: 0.5;
+}
+
+.gallery__control-next{
+    transition: all .5s ease;
+}
+
+.gallery__control-next:hover{
+    opacity: 0.5;
+}
+
+
+/* Contacts */
+.contacts{
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+.contacts-container{
+    margin: 0 auto;
+    width: 1150px;
+}
+
+.contacts-header{ 
+    margin-bottom: 74px;
+    position: relative;
+    
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+
+    color: var(--black-121212);
+}
+
+.contacts-wrapper{
+    display: flex;
+    column-gap: 104px;
+}
+
+/* .contacts-header::before{
+    content: "";
+    display: block;
+    position: absolute;
+    
+    left: -4px;
+    top: -36px;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url('./resources/icon/icon-contacts.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+} */
+
+.contacts-telephone{
+    display: block;
+    
+    margin-bottom: 32px;
+    width: 480px;
+    height: 60px;
+    
+    position: relative;
+
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-decoration: none;
+    letter-spacing: -0.02em;
+
+    color: var(--black-121212);
+}
+
+.contacts-telephone::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50px;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url('./resources/icon/contacts/icon-telephone.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.contacts-link{
+    display: block;
+
+    width: 412px;
+    height: 60px;
+
+    position: relative;
+
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    text-decoration: none;
+
+    color: gray;
+
+    transition: .3s linear;
+}
+
+.contacts-link::before{
+    content: "";
+    display: block;
+
+    position: absolute;
+    top: -50px;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url('./resources/icon/contacts/icon-mail.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%
+}
+
+.contacts-link:hover{
+    opacity: 0.5;
+}
+
+.contacts-link::after{
+    margin-top: 6px;
+
+    width: 100%;
+    height: 0.1px;
+
+    content: "";
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    border: 1px solid var(--black-121212);
+
+    background-color: var(--black-121212);
+    opacity: 0.5; 
+}
+
+.contacts-link:hover::after{
+    display: block;
+    opacity: 0.5;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #121212;
+    background-size: 100%;
+}
+
+.footer-inner{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.footer__inner-wrapper{
+    margin-bottom: 87px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    column-gap: 53px;
+}
+
+.nav__link{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer__header{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: white;
+}
+
+/* Настраиваем адаптивность сайта */
+@media (max-width: 1149px){
+    .container{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Basic Information */
+    .basic-information{
+        margin-bottom: 120px;
+    }
+
+    .header-main{
+        margin-bottom: 30px;
+        max-width: 100%;
+        font-size: 50px;
+    }
+
+    .header-img-paragraph{
+        width: 100%;
+        height: 400px;
+    }
+    
+    .header-paragraph{
+        left: 40px;
+        top: 289px;
+    }
+
+
+
+    /* About Us */
+    .about-us{
+        margin-bottom: 120px;
+    }
+
+    .about-us-paragraph{
+        width: 100%;
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    /* Projects */
+    .item{
+        margin-bottom: 80px;
+    }
+
+    .item:nth-child(4){
+        margin-bottom: 102px;
+    }
+
+    .item__img{
+        width: 100%;
+    }
+
+    
+
+    .item__header{
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    /* Services */
+    .services{
+        margin-bottom: 117px;
+    }
+
+    .padding-top-bottom{
+        width: 100%;
+    }
+
+    .services__header{
+        margin-bottom: 30px;
+    }
+
+    .box-wrapper{
+        width: 100%;
+        row-gap: 80px;
+        column-gap: 10px;
+    }
+
+    .box-item{
+        width: calc(50% - 5px);
+    }
+
+    .box-item__header{
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .box-item__price{
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .box-item__img{
+        margin-bottom: 25px;
+        display: block;
+        width: 100%;
+    }
+
+    .services__btn{
+        margin-bottom: 120px;
+    }
+
+
+    /* Reviews */
+    .reviews{
+        margin-bottom: 120px;
+    }
+
+    .reviews__header{
+        margin-bottom: 25px;
+    }
+    .row{
+        row-gap: 80px;
+        column-gap: 10px;
+    }
+
+    .col{
+        width: calc(50% - 46px);
+    }
+
+    .box_big{
+        width: calc(50% + 0px);
+    }
+
+    .box__header{
+        margin-bottom: 14px;
+    }
+
+    .box__content{
+        letter-spacing: -0.03em;
+    }
+
+
+    .box_big{
+        width: calc(50% + 536px);
+    }
+
+
+    /* Two room apartment project */
+
+    .section-gallery{
+        margin-bottom: 120px;
+        height: 536px;
+    }
+
+    .gallery__container-position{
+        top: 80px;
+        left: 50px;
+    }
+
+    .gallery__slide-header{
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .gallery__slide{
+        width: 100%;
+        height: 536px;
+    }
+
+    .gallery__slide_active{
+        /* opacity: 1; */
+    }
+
+    .gallery__container-wrapper{
+        top: 388px;
+        left: 50px;
+    }
+
+    .gallery__content{
+        width: 374px;
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .gallery__container-controls{
+        column-gap: 14px;
+        top: 344px;
+        left: 50px;
+    }
+
+
+
+    /* Contacts */
+    .contacts{
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+    .contacts-container{
+        padding-left: 17px;
+        width: 959px;
+    }
+
+    .contacts-header{ 
+        font-size: 18px;
+        line-height: 25px;
+
+    }
+
+    .contacts-wrapper{
+        column-gap: 114px;
+    }
+
+    .contacts-telephone{
+        width: 354px;
+        height: 60px;
+        
+        position: relative;
+
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+    
+
+    .contacts-link{
+        width: 309px;
+        height: 60px;
+
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    /* Footer */
+
+    .footer{
+        min-width: 960px;
+        max-width: 1148px;
+    }
+}
+
+
+
+@media (max-width: 730px){
+    .container{
+        margin: 0 auto;
+        width: 100%;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+
+    /* Basic Information */
+    .basic-information{
+        margin-bottom: 80px;
+    }
+
+    .header-main{
+        width: 100%;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .header-img-paragraph{
+        height: 320px;
+    }
+
+    .header-paragraph{
+        width: 273px;
+        left: 15px;
+        top: 201px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+    /* About Us */
+    .about-us{
+        margin-bottom: 80px;
+    }
+
+    .about-us-header{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .span-nav{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .about-us-paragraph{
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .about-us-btn{
+        width: 194px;
+        height: 51px;
+        line-height: 51px;
+    }
+
+
+    /* Projects */
+    .projects{
+        margin-bottom: 144px;
+    }
+
+    .item{
+        margin-bottom: 49px;
+    }
+
+    .item:nth-child(4){
+        margin-bottom: 60px;
+    }
+
+    .projects__header{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .item__header{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .item__link{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .projects__link-btn{
+        width: 100%;
+        height: 100px;
+        font-size: 22px;
+        line-height: 100px;
+    }
+
+    
+    /* Services */
+    .services{
+        min-width: 350px;
+    }
+
+    .black-container{
+        width: 350px;
+        padding: 80px 0;
+        
+    }
+
+    .services__header{
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .box-wrapper{
+        width: 100%;
+        row-gap: 60px;
+    }
+
+    .box-item{
+        width: 100%;
+    }
+
+    .box-item__header{
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .box-item__price{
+        left: 22px;
+        top: 24px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .services__btn{
+        height: 100px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    
+    /* Reviews */
+    .reviews{
+        margin-bottom: 80px;
+    }
+
+    .reviews__header{
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .row{
+        flex-direction: column;
+        row-gap: 80px;
+        column-gap: 0px;
+    }
+
+    .col{
+        width: 100%;
+    }
+
+    .box{
+        /* display: inline-block; */
+        /* width: 406px; */
+    }
+
+    .box_big{
+        width: 100%;
+    }
+
+    .box__header{
+        margin-bottom: 14px;
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .box__content{
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+    }
+
+
+    /* Two room apartment project */
+
+    .section-gallery{
+        margin-bottom: 80px;
+        height: 408px;
+    }
+
+    .gallery__container-position{
+        top: 61px;
+        left: 12px;
+    }
+
+    .gallery__slide-header{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .gallery__slide{
+        width: 100%;
+        height: 408px;
+    }
+
+    .gallery__container-wrapper{
+        top: 296px;
+        left: 13px;
+    }
+
+    .gallery__content{
+        width: calc(100% - 69px);
+        font-size: 19.0086px;
+        line-height: 26px;
+    }
+
+    .gallery__container-controls{
+        justify-content: space-between;
+        column-gap: 0px;
+        left: 0;
+        top: 189px;
+    }
+
+    .gallery__control-prev{
+        box-sizing: content-box;
+        padding-left: 7px;
+        width: 14px;
+        height: 24px;
+    }
+
+    .gallery__control-next{
+        box-sizing: content-box;
+        padding-right: 7px;
+        width: 14px;
+        height: 24px;
+    }
+
+
+    
+    /* Contacts */
+
+    .contacts-container{
+        padding-left: 11px;
+        width: 100%;
+    }
+
+    .contacts-header{ 
+        margin-bottom: 58px;
+        font-size: 14px;
+        line-height: 19px;
+
+    }
+
+    .contacts-wrapper{
+        column-gap: 114px;
+        flex-direction: column;
+    }
+
+    .contacts-telephone{
+        width: 354px;
+        width: calc(100% - 42px);
+        height: 60px;
+
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .contacts-telephone::before{
+        width: 18px;
+        height: 18px;
+        top: -30px;
+    }
+
+    .contacts-link{
+        width: 309px;
+        height: 60px;
+        font-size: 35px;
+        line-height: 46px;
+
+        color: #121212;
+    }
+
+    .contacts-link::before{
+        width: 18px;
+        height: 18px;
+
+        top: -30px;
+    }
+
+    /* Footer */
+    .footer{
+        min-width: 410px;
+    }
+
+    .footer-inner{
+        padding-top: 30px;
+        padding-bottom: 26px;
+    }
+    
+    .nav__link{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    .footer__header{
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
