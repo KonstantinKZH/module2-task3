@@ -729,6 +729,11 @@ body{
     line-height: 25px;
     text-decoration: none;
     color: #ffffff;
+    transition:  all .3s ease;
+}
+
+.nav__link:hover{
+    opacity: 0.5;
 }
 
 .footer__header{
