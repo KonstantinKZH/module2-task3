@@ -19,19 +19,43 @@
 <body>
 
     <!-- Навигационная панель -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
-            <a class="logo-link" href="/"><img class="logo" src="resources/images/nav-panel/Метрика.png"
-                    alt="Метрика"></a>
+            <div class="header-inner">
+                <a class="logo-link" href="/"><img class="logo" src="resources/images/nav-panel/Метрика.png"
+                        alt="Метрика"></a>
 
-            <ul class="ul-links">
-                <li class="ul-links__li"><a class="ul-links__link" href="#for-us">о нас</a></li>
-                <li class="ul-links__li"><a class="ul-links__link" href="#draft">проекты</a></li>
-                <li class="ul-links__li"><a class="ul-links__link" href="#amenities">услуги</a></li>
-                <li class="ul-links__li"><a class="ul-links__link" href="#data-contacts">контакты</a></li>
-            </ul>
+                <nav class="navigation">
+                    <a class="navigation__link" href="#for-us">о нас</a>
+                    <a class="navigation__link" href="#draft">проекты</a>
+                    <a class="navigation__link" href="#amenities">услуги</a>
+                    <a class="navigation__link" href="#data-contacts">контакты</a>
+                </nav>
+                <div class="js-burger-btn burger-btn"></div>
+            </div>
         </div>
-    </header> -->
+    </header>
+
+    <div class="js-burger burger">
+        <div class="js-burger__content burger__content">
+            <a class="burger__logo-link" href="/"><img class="burger__logo" src="resources/images/nav-panel/Метрика.png"
+                alt="Метрика"></a>
+                <nav class="burger-navigation">
+                    <a class="burger-navigation__link" href="#for-us">о нас</a>
+                    <a class="burger-navigation__link" href="#draft">проекты</a>
+                    <a class="burger-navigation__link" href="#amenities">услуги</a>
+                    <a class="burger-navigation__link" href="#data-contacts">контакты</a>
+                </nav>
+
+                <div class="burger__contacts">
+                    <p class="burger__text">Для связи</p>
+                    <a class="burger__telephone-link" href="tel:+7 935  895-45-35">+7 935  895-45-35</a>
+                    <a class="burger__email-link" href="mailto:hello@mail.com">hello@mail.com</a>
+                </div>
+
+                <div class="js-burger-cross-btn burger__close-btn"></div>
+        </div>
+    </div>
 
     <main class="main">
 
@@ -140,7 +164,27 @@
                     </div>
                 </div>
 
-                <button class="services__btn">Заказать услугу</button>
+                <button class="js-btn services__btn">Заказать услугу</button>
+
+                <div class="js-popup popup">
+                    <div class="js-popup__content popup__content">
+                        <div class="popup__content-wrapper">
+                            <p class="popup__title">Заказать услугу</p>
+                            <p class="popup__text">
+                                Заполните форму, мы свяжемся
+                                с вами в течение суток
+                            </p>
+                            <div class="popup__input-wrapper">
+                                <input type="text" class="popup__input" placeholder="Имя">
+                                <input type="text" class="popup__input" placeholder="Электронная почта">
+                                <input type="text" class="popup__input" placeholder="Номер телефона">
+                            </div>
+                            <button class="popup__btn">Отправить</button>
+                            <button class="js-popup__close-btn popup__close-btn"></button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -274,7 +318,7 @@
                     <div class="gallery__slide gallery__slide-img4">
 
                         <img class="gallery__slide-img" src="resources/images/gallery/gallery-img4.png" alt="">
-                        
+
                         <div class="container">
                             <div class="gallery__container-wrapper">
                                 <p class="gallery__content">
@@ -331,8 +375,11 @@
         </div>
     </footer>
 
+    <script src="burger.js"></script>
+    <script src="popup.js"></script>
+    
+    
     <script src="gallery.js"></script>
-
 </body>
 
 </html>
